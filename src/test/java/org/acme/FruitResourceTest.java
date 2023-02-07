@@ -34,7 +34,7 @@ public class FruitResourceTest {
                 .then()
                 .statusCode(200)
                 .body("$.size()", is(3),
-                        "nome", containsInAnyOrder("Maçã", "Abacaxi", "Pera"),
+                        "nome", containsInAnyOrder("Maçã", "Abacaxi"),
                         "descricao", containsInAnyOrder("Fruta de inverno", "Fruta tropical", "Fruta de inverno"));
 
         given()
